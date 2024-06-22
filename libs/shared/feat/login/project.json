@@ -1,0 +1,9 @@
+{
+  "name": "shared-feat-login",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/shared/feat/login/src",
+  "projectType": "library",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project shared-feat-login --web",
+  "targets": {}
+}

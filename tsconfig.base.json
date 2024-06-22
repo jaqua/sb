@@ -1,0 +1,23 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2020", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@jaqua/shared/feat/login": ["libs/shared/feat/login/src/index.ts"],
+      "@jaqua/shared/graphql": ["libs/shared/util/graphql/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}
