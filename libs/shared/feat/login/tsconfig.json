@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "jsx": "react-jsx",
+    "types": ["@testing-library/react"],
     "allowJs": false,
     "esModuleInterop": false,
     "allowSyntheticDefaultImports": true,
