@@ -45,18 +45,18 @@ export const FullWidth: Story = {
   },
 };
 
-// export const UserInteraction: Story = {
-//   play: async ({ canvasElement }) => {
-//     render(<InputBox label="Your Name" />);
-//     const input = screen.getByRole('textbox');
+export const UserInteraction: Story = {
+  play: async ({ canvasElement }) => {
+    render(<InputBox label="Your Name" />);
+    const input = screen.getByRole('textbox');
 
-//     await userEvent.type(input, 'Hello, Storybook!');
+    await userEvent.type(input, 'Hello, Storybook!');
 
-//     // Add actions to capture user interactions (optional)
-//     // expect(actions('onChange')).toHaveBeenCalled();
-//   },
-// };
+    // Add actions to capture user interactions (optional)
+    // expect(actions('onChange')).toHaveBeenCalled();
+  },
+};
 
-// export const UnitTest: Story = {
-//   args: { label: 'Email', value: 'test@example.com' },
-// };
+export const UnitTest: Story = {
+  args: { label: 'Email', value: 'test@example.com' },
+};
