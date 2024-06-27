@@ -7,6 +7,7 @@ import InputBox from './inputbox/InputBox';
 import PasswordInput from './passwordinput/PasswordInput';
 import styled from '@emotion/styled';
 import LoginButton from './button/LoginButton';
+import Logo from './logo/Logo';
 
 export interface LoginProps {
   callbackUrl?: string;
@@ -58,6 +59,7 @@ const Login: React.FC<LoginProps> = ({ callbackUrl = '/' }) => {
 
   return (
     <StyledForm onSubmit={handleSubmit(onSubmit)} data-testid="login-form">
+      <Logo src='https://www.freeiconspng.com/thumbs/login-icon/client-login-icon-4.gif' />
       <StyledInput
         component={InputBox}
         label="Benutzername"
