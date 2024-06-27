@@ -6,14 +6,14 @@ import VisibilityOff from '@mui/icons-material/VisibilityOff';
 export interface PasswordInputProps {
   label?: string;
   value?: string;
-  onChange?: (value: string) => void;
+  onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
   error?: boolean;
   helperText?: string;
 }
 
 const PasswordInput: React.FC<PasswordInputProps> = ({
   label,
-  value = '',
+  value,
   onChange,
   error,
   helperText,
@@ -30,7 +30,7 @@ const PasswordInput: React.FC<PasswordInputProps> = ({
       label={label}
       type={showPassword ? 'text' : 'password'}
       value={value}
-      onChange={(event) => onChange?.(event.target.value)}
+      onChange={onChange}
       error={error}
       helperText={helperText}
       {...props}
